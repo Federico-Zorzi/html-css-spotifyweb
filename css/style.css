@@ -1,0 +1,83 @@
+:root {
+  --low-bar: 100px;
+  --main-side-bar: 60px;
+  --main-upper-bar: 100px;
+}
+
+/* reset */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* # UTILS */
+
+.container {
+  margin: 0 auto;
+  padding: 0 10px;
+  width: 1000px;
+  max-width: 100%;
+}
+
+.clearfix::after {
+  /* da applicare al genitore con regola float */
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* STRUCTURE */
+
+.app-player {
+  height: var(--low-bar);
+  background-color: #282828;
+}
+
+.app-top {
+  height: calc(100vh - var(--low-bar));
+  display: flex;
+}
+
+.main-side-bar {
+  width: var(--main-side-bar);
+  background-color: #000;
+  flex-shrink: 0;
+}
+
+.main-contents {
+  width: 100%;
+  background-color: #141922;
+}
+
+.upper-bar {
+  height: var(--main-upper-bar);
+  background-color: #0c0f14;
+}
+
+.contents {
+  overflow-y: auto;
+}
+
+/* MEDIA QUERY */
+
+@media screen and (min-width: 650px) {
+}
+
+@media screen and (min-width: 1100px) {
+}
