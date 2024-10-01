@@ -1,6 +1,6 @@
 :root {
-  --low-bar: 100px;
-  --main-side-bar: 60px;
+  --low-bar: 70px;
+  --main-side-bar: 50px;
   --main-upper-bar: 100px;
 }
 
@@ -44,6 +44,12 @@ ul {
 
 /* STRUCTURE */
 
+.wrapper {
+  width: 100vw;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
 .app-player {
   height: var(--low-bar);
   background-color: #282828;
@@ -61,7 +67,7 @@ ul {
 }
 
 .main-contents {
-  width: 100%;
+  width: calc(100% - var(--main-side-bar));
   background-color: #141922;
 }
 
@@ -71,13 +77,23 @@ ul {
 }
 
 .contents {
+  height: calc(100% - var(--main-upper-bar));
   overflow-y: auto;
 }
 
 /* MEDIA QUERY */
 
-@media screen and (min-width: 650px) {
+/* small */
+@media screen and (min-width: 576px) {
+  :root {
+    --main-side-bar: 200px;
+  }
 }
 
-@media screen and (min-width: 1100px) {
+/* medium */
+@media screen and (min-width: 768px) {
+}
+
+/* large */
+@media screen and (min-width: 992px) {
 }
