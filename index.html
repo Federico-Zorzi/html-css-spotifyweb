@@ -48,27 +48,45 @@
           <div id="btn-functions">
             <!-- home -->
             <button id="home" class="side-bar-btn">
-              <img src="./img/home.svg" alt="home" class="icon d-sm-inline" />
+              <svg
+                class="icon"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M448 463.746h-149.333v-149.333h-85.334v149.333h-149.333v-315.428l192-111.746 192 110.984v316.19z"
+                />
+              </svg>
               <span class="btn-description d-none d-sm-inline">Home</span>
             </button>
 
             <!-- search -->
             <button id="search" class="side-bar-btn">
-              <img
-                src="./img/search.svg"
-                alt="search"
-                class="icon d-sm-inline"
-              />
+              <svg
+                class="icon"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M349.714 347.937l93.714 109.969-16.254 13.969-93.969-109.969q-48.508 36.825-109.207 36.825-36.826 0-70.476-14.349t-57.905-38.603-38.603-57.905-14.349-70.476 14.349-70.476 38.603-57.905 57.905-38.603 70.476-14.349 70.476 14.349 57.905 38.603 38.603 57.905 14.349 70.476q0 37.841-14.73 71.619t-40.889 58.921zM224 377.397q43.428 0 80.254-21.461t58.286-58.286 21.461-80.254-21.461-80.254-58.286-58.285-80.254-21.46-80.254 21.46-58.285 58.285-21.46 80.254 21.46 80.254 58.285 58.286 80.254 21.461z"
+                  fill-rule="evenodd"
+                />
+              </svg>
+
               <span class="btn-description d-none d-sm-inline">Cerca</span>
             </button>
 
             <!-- library -->
             <button id="library" class="side-bar-btn">
-              <img
-                src="./img/libreria.svg"
-                alt="library"
-                class="icon d-sm-inline"
-              />
+              <svg
+                class="icon"
+                viewBox="0 0 512 512"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M291.301 81.778l166.349 373.587-19.301 8.635-166.349-373.587zM64 463.746v-384h21.334v384h-21.334zM192 463.746v-384h21.334v384h-21.334z"
+                />
+              </svg>
               <span class="btn-description d-none d-sm-inline"
                 >La tua libreria
               </span>
@@ -123,13 +141,52 @@
 
         <!-- sezione per contenuto principale -->
         <div class="main-contents">
-          <div class="top-bar"></div>
+          <div class="top-bar">
+            <div class="upgrade">
+              <button class="btn-upgrade">EFFETTUA L'UPGRADE</button>
+            </div>
+          </div>
           <div class="contents"></div>
         </div>
       </div>
 
       <!-- app player - lower bar -->
-      <div class="app-player"></div>
+      <div class="app-player d-flex">
+        <!-- musica riprodotta -->
+        <div class="played-music d-flex">
+          <div>
+            <img
+              class="played-music-image"
+              src="./img/sinister.jpeg"
+              alt="music played"
+            />
+          </div>
+
+          <div>
+            <span class="artist-name">Sinister</span>
+            <span class="music-title">Brano Nome</span>
+          </div>
+        </div>
+
+        <!-- progress bar brano attuale -->
+        <div class="played-music-interactions d-flex">
+          <div class="btns-interation-music">
+            <i class="fa-solid fa-backward-step"></i>
+            <i class="fa-solid fa-arrow-rotate-left"></i>
+            <i class="fa-regular fa-circle-play"></i>
+            <i class="fa-solid fa-forward-step"></i>
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+          </div>
+          <div class="progress-bar d-flex">
+            <div class="current-time">0:25</div>
+            <div class="bar"><span class="bar-actual-time"></span></div>
+            <div class="finished-time">4:35</div>
+          </div>
+        </div>
+
+        <!-- tasti per interagire con la musica attualmente riprodotta -->
+        <div class="played-music-functions">item</div>
+      </div>
     </div>
   </body>
 </html>

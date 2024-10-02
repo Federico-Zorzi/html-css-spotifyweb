@@ -102,11 +102,16 @@ button {
 .main-contents {
   width: calc(100% - var(--side-bar));
   background-color: #141922;
+  color: white;
 }
 
 .top-bar {
   height: var(--upper-bar);
   background-color: #0c0f14;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .contents {
@@ -121,20 +126,27 @@ button {
 
 /* SIDE BAR */
 
+.main-side-bar .logo {
+  margin: 0.5rem auto;
+  height: 25px;
+}
+
 .side-bar-btn {
   background-color: transparent;
   border: 0;
   width: 100%;
 }
 
-.main-side-bar .logo {
-  margin: 0.3rem auto;
-  height: 25px;
-}
-
 .icon {
   height: 25px;
-  margin: 3px auto;
+  fill: grey;
+}
+
+#home:hover > *,
+#search:hover > *,
+#library:hover > * {
+  fill: white;
+  color: white;
 }
 
 .btn-description {
@@ -202,6 +214,60 @@ button {
   color: white;
 }
 
+/* TOP BAR */
+
+.upgrade {
+  margin-right: 20px;
+}
+
+.btn-upgrade {
+  padding: 1rem 2rem;
+
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 30px;
+  color: white;
+}
+/* LOW BAR */
+
+.app-player {
+  color: white;
+  padding: 0 1rem;
+
+  justify-content: space-between;
+  align-items: center;
+}
+
+.played-music {
+  align-items: center;
+  gap: 10px;
+}
+
+.played-music-image {
+  max-width: 30px;
+}
+
+.played-music-interactions {
+  flex-grow: 1;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+.progress-bar {
+  align-items: center;
+  gap: 1rem;
+}
+
+.bar {
+  height: 4px;
+  width: 250px;
+  background-color: grey;
+  border-radius: 10px;
+}
+
+.bar-actual-time {
+}
 /* MEDIA QUERY */
 
 /* small */
@@ -241,17 +307,16 @@ button {
     vertical-align: middle;
   }
 
-  #home {
-    padding: 0.3rem 1rem;
-    border-left: 2px solid lime;
-  }
-
-  #search {
-    padding: 0.3rem 1rem;
-  }
-
+  #home,
+  #search,
   #library {
     padding: 0.3rem 1rem;
+  }
+
+  #home:hover,
+  #search:hover,
+  #library:hover {
+    border-left: 2px solid lime;
   }
 
   .side-bar-btn,
