@@ -228,6 +228,7 @@ button {
   border-radius: 30px;
   color: white;
 }
+
 /* LOW BAR */
 
 .app-player {
@@ -236,6 +237,22 @@ button {
 
   justify-content: space-between;
   align-items: center;
+  gap: 1rem;
+}
+
+.low-bar-btn {
+  background-color: transparent;
+  border: 0;
+}
+
+.played-music .low-bar-btn {
+  color: grey;
+  font-size: 1rem;
+}
+
+.played-music-functions .low-bar-btn {
+  color: white;
+  font-size: 1rem;
 }
 
 .played-music {
@@ -248,8 +265,6 @@ button {
 }
 
 .played-music-interactions {
-  flex-grow: 1;
-
   flex-direction: column;
   align-items: center;
 }
@@ -259,15 +274,51 @@ button {
   gap: 1rem;
 }
 
-.bar {
+.bar,
+.volume-bar {
   height: 4px;
-  width: 250px;
   background-color: grey;
   border-radius: 10px;
 }
 
-.bar-actual-time {
+.bar {
+  width: 300px;
 }
+
+.volume-bar {
+  width: 80px;
+}
+
+.progress {
+  height: 100%;
+  width: 30%;
+  background-color: white;
+  border-radius: 2px;
+  position: relative;
+}
+
+.progress::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(50%, -50%);
+}
+
+.played-music-functions {
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.played-music-functions > div {
+  flex-shrink: 0;
+}
+
 /* MEDIA QUERY */
 
 /* small */
