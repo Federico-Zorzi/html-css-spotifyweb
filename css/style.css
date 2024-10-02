@@ -266,7 +266,7 @@ button {
 }
 
 .music-played-interactions .low-bar-btn .fa-circle-play {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
 }
 
 .music-played .low-bar-btn {
@@ -278,9 +278,12 @@ button {
   color: white;
 }
 
-.music-played-interactions .low-bar-btn:first-child,
+.music-played-interactions .low-bar-btn:first-child {
+  margin: 0 0.8rem 0 0;
+}
+
 .music-played-interactions .low-bar-btn:last-child {
-  margin: 0 0.8rem;
+  margin: 0 0 0 0.8rem;
 }
 
 .music-played-interactions .low-bar-btn:nth-child(3) {
@@ -326,7 +329,7 @@ button {
 .progress-bar {
   align-items: center;
   gap: 1rem;
-  width: 80%;
+  width: 100%;
 }
 
 .progress-bar .current-time,
