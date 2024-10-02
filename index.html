@@ -35,26 +35,25 @@
       <div class="app-top">
         <!-- barra laterale -->
         <div class="main-side-bar">
-          <!-- parte superiore barra laterale -->
-          <div class="side-bar-functions">
-            <!-- logo -->
-            <button class="side-bar-btn">
-              <img src="./img/logo-small.svg" alt="logo" class="d-sm-none" />
-              <img
-                src="./img/logo.svg"
-                alt="logo"
-                class="logo d-none d-sm-block"
-              />
-            </button>
+          <!-- logo -->
+          <div id="logo">
+            <img src="./img/logo-small.svg" alt="logo" class="logo d-sm-none" />
+            <img
+              src="./img/logo.svg"
+              alt="logo"
+              class="logo d-none d-sm-block"
+            />
+          </div>
 
+          <div id="btn-functions">
             <!-- home -->
-            <button class="side-bar-btn">
+            <button id="home" class="side-bar-btn">
               <img src="./img/home.svg" alt="home" class="icon d-sm-inline" />
               <span class="btn-description d-none d-sm-inline">Home</span>
             </button>
 
             <!-- search -->
-            <button class="side-bar-btn">
+            <button id="search" class="side-bar-btn">
               <img
                 src="./img/search.svg"
                 alt="search"
@@ -64,45 +63,47 @@
             </button>
 
             <!-- library -->
-            <button class="side-bar-btn">
+            <button id="library" class="side-bar-btn">
               <img
                 src="./img/libreria.svg"
                 alt="library"
                 class="icon d-sm-inline"
               />
               <span class="btn-description d-none d-sm-inline"
-                >La tua libreria</span
-              >
+                >La tua libreria
+              </span>
             </button>
+          </div>
 
-            <!-- playlist -->
-            <div class="playlist d-none d-sm-block">
-              <h2 class="playlist-title">PLAYLIST</h2>
+          <!-- playlist -->
+          <div id="playlist" class="d-none d-sm-block">
+            <h2 class="playlist-title">PLAYLIST</h2>
 
-              <button class="btn-playlist">
-                <span class="plus">+</span>
-                <span class="btn-description">Crea playlist</span>
-              </button>
+            <button class="btn-playlist">
+              <span class="plus">
+                <i class="fa-solid fa-plus"></i>
+              </span>
+              <span class="btn-description">Crea playlist</span>
+            </button>
+          </div>
 
-              <!-- playlist list -->
-              <div class="playlist-list">
-                <ul>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                  <li class="playlist-list-item">Nome Playlist</li>
-                </ul>
-              </div>
-            </div>
+          <!-- playlist list -->
+          <div id="playlist-list" class="d-none d-sm-block">
+            <ul>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+              <li class="playlist-list-item">Nome Playlist</li>
+            </ul>
           </div>
 
           <!-- parte inferiore barra laterale -->
-          <div class="side-bar-user">
+          <div id="user" class="side-bar-user">
             <div class="section-download">
               <button class="side-bar-btn">
                 <i class="fa-regular fa-circle-down"></i>
@@ -122,7 +123,7 @@
 
         <!-- sezione per contenuto principale -->
         <div class="main-contents">
-          <div class="upper-bar"></div>
+          <div class="top-bar"></div>
           <div class="contents"></div>
         </div>
       </div>
