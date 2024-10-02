@@ -153,17 +153,17 @@
       <!-- app player - lower bar -->
       <div class="app-player d-flex">
         <!-- musica riprodotta -->
-        <div class="played-music d-flex">
+        <div class="music-played d-flex">
           <div>
             <img
-              class="played-music-image"
+              class="music-played-image"
               src="./img/sinister.jpeg"
               alt="music played"
             />
           </div>
 
           <div>
-            <span class="artist-name d-block">Sinister</span>
+            <span class="music-artist-name d-block">Sinister</span>
             <span class="music-title">Brano Nome</span>
           </div>
 
@@ -178,13 +178,27 @@
         </div>
 
         <!-- progress bar brano attuale -->
-        <div class="played-music-interactions d-flex">
+        <div class="music-played-interactions d-flex">
           <div class="btns-interation-music">
-            <i class="fa-solid fa-backward-step"></i>
-            <i class="fa-solid fa-arrow-rotate-left"></i>
-            <i class="fa-regular fa-circle-play"></i>
-            <i class="fa-solid fa-forward-step"></i>
-            <i class="fa-solid fa-arrow-rotate-right"></i>
+            <button class="low-bar-btn">
+              <i class="fa-solid fa-arrow-rotate-left"></i>
+            </button>
+
+            <button class="low-bar-btn">
+              <i class="fa-solid fa-backward-step"></i>
+            </button>
+
+            <button class="low-bar-btn">
+              <i class="fa-regular fa-circle-play"></i>
+            </button>
+
+            <button class="low-bar-btn">
+              <i class="fa-solid fa-forward-step"></i>
+            </button>
+
+            <button class="low-bar-btn">
+              <i class="fa-solid fa-arrow-rotate-right"></i>
+            </button>
           </div>
           <div class="progress-bar d-flex">
             <div class="current-time">0:25</div>
@@ -196,7 +210,7 @@
         </div>
 
         <!-- tasti per interagire con la musica attualmente riprodotta -->
-        <div class="played-music-functions d-flex">
+        <div class="music-played-functions d-flex">
           <div>
             <button class="low-bar-btn">
               <i class="fa-solid fa-list"></i>
